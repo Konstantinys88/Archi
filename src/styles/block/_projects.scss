@@ -1,0 +1,25 @@
+.projects {
+    padding-top: 95px;
+    &__grid {
+        padding-top: 71px;
+        display: grid;
+        grid-template-columns: repeat(3, 344px);
+        gap: 86px 104px;
+        text-align: center;
+    }
+    &__grid-item {
+        p {
+            padding-top: 13px;
+            position: relative;
+            width: 100%;
+            max-width: 178px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 18px;
+            line-height: 21px;
+            text-align: center;
+            color: #2F2E2E;
+            font-family: $font-playFair;
+        }
+    }
+}

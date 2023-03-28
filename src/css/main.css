@@ -206,6 +206,31 @@ body .container {
   font-weight: 900;
 }
 
+.projects {
+  padding-top: 95px;
+}
+.projects__grid {
+  padding-top: 71px;
+  display: grid;
+  grid-template-columns: repeat(3, 344px);
+  gap: 86px 104px;
+  text-align: center;
+}
+.projects__grid-item p {
+  padding-top: 13px;
+  position: relative;
+  width: 100%;
+  max-width: 178px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #2F2E2E;
+  font-family: "Playfair Display", serif;
+}
+
 @media (max-width: 1280px) {
   .container {
     padding: 0 15px;
