@@ -1,3 +1,35 @@
 .testimonial {
+    padding-top: 90px;
+    &__h2 {
+        text-align: center;
+    }
+    &__flex {
+        padding-top: 78px;
+        display: flex;
+
+    }
+    &__item {
+        display: flex;
+        align-items: center;
+        max-height: 151px;
+        padding-right: 130px;
+    }
+    &__item-img {
+        padding-right: 29px;
+
+    }
+    &__h4 {
+        font-family: $font-playFair;
+        font-size: 28px;
+        line-height: 33px;
+        color: #2F2E2E;
+    }
+    &__p {
+        padding-top: 16px;
+        font-family: $font-playFair;
+        font-size: 17px;
+        line-height: 20px;
+        color: #2F2E2E;
+    }
     
 }

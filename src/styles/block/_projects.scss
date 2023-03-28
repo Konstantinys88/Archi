@@ -21,5 +21,11 @@
             color: #2F2E2E;
             font-family: $font-playFair;
         }
+        img {
+            transition: 0.5s;
+            &:hover {
+                filter: brightness(40%);
+            }
+        }
     }
 }

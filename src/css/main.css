@@ -28,7 +28,6 @@ body .container {
   font-family: "Playfair Display", serif;
   font-size: 27px;
   line-height: 32px;
-  text-align: center;
   color: #2F2E2E;
 }
 
@@ -229,6 +228,119 @@ body .container {
   text-align: center;
   color: #2F2E2E;
   font-family: "Playfair Display", serif;
+}
+.projects__grid-item img {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.projects__grid-item img:hover {
+  -webkit-filter: brightness(40%);
+          filter: brightness(40%);
+}
+
+.testimonial {
+  padding-top: 90px;
+}
+.testimonial__h2 {
+  text-align: center;
+}
+.testimonial__flex {
+  padding-top: 78px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.testimonial__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-height: 151px;
+  padding-right: 130px;
+}
+.testimonial__item-img {
+  padding-right: 29px;
+}
+.testimonial__h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 28px;
+  line-height: 33px;
+  color: #2F2E2E;
+}
+.testimonial__p {
+  padding-top: 16px;
+  font-family: "Playfair Display", serif;
+  font-size: 17px;
+  line-height: 20px;
+  color: #2F2E2E;
+}
+
+.footer {
+  margin-top: 150px;
+  background: #2E2F32;
+}
+.footer__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 47px 0;
+}
+.footer__archiWeb {
+  max-width: 287px;
+}
+.footer__archiWeb-h3 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 42px;
+  line-height: 50px;
+  color: #FAFAFA;
+}
+.footer__archiWeb-p {
+  padding-top: 7px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 29px;
+  color: #FAFAFA;
+}
+.footer__archiWeb-social {
+  padding-top: 47px;
+}
+.footer__archiWeb-social img {
+  padding-right: 36px;
+}
+.footer__articles {
+  max-width: 201px;
+}
+.footer__articles-h2 {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29px;
+  color: #FAFAFA;
+}
+.footer__articles-p {
+  padding-top: 18px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 21px;
+  color: #FAFAFA;
+}
+.footer__location {
+  max-width: 295px;
+}
+.footer__location-map {
+  padding-top: 18px;
 }
 
 @media (max-width: 1280px) {
