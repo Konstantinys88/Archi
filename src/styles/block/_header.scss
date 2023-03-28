@@ -1,0 +1,42 @@
+.header {
+    padding-top: 47px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+    }
+    &__logo {
+        font-family: $font-inter;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 42px;
+        line-height: 50px;
+        color: #2F2E2E;
+    }
+    &__menu {
+        width: 100%;
+        max-width: 529px;
+    }
+    &__navigation {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__navigation-a {
+        text-decoration: none;
+        font-family: $font-inter;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        color: #2F2E2E;
+        &:hover {
+            font-weight: 700;
+        }
+    }
+    &__search {
+        img {
+            width: 25px;
+        }
+    }
+}
