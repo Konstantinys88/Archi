@@ -2,10 +2,7 @@
     padding-top: 76px;
     &__wrapper {
         display: flex;
-        // width: 100%;
-        // max-width: 735px;
-        // height: 100%;
-        // max-height: 571px;
+        justify-content: space-between;
     }
     &__content {
         padding: 73px 0px 0px 85px;

@@ -4,6 +4,7 @@
     &__wrapper {
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
         padding: 47px 0;
     }
     &__archiWeb {

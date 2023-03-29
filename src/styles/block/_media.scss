@@ -2,21 +2,230 @@
     .container {
         padding: 0 15px;
     }
+    .header {
+        &__wrapper {
+            flex-direction: column;
+        }
+        &__menu { 
+            padding-top: 15px;
+            padding-bottom: 15px;
+        }
+        &__search {
+            justify-content: center;
+            margin-bottom: 10px;
+
+        }
+    }
+    .about {
+        padding: 0;
+        .container {
+            padding: 0;
+            margin: 0;
+        }
+        &__img {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        &__content {
+            position: absolute;
+        }
+    }
+    .projects {
+        &__h2 {
+            text-align: center;
+        }
+        &__grid {
+            grid-template-columns: repeat(2, 344px);
+            gap: 30px;
+            justify-content: center;
+            
+        }
+    }
+    .testimonial {
+        &__flex {
+            flex-direction: column;
+            justify-content: center;
+            padding-top: 15px;
+        }
+        &__item {
+            padding-top: 15px;
+            padding-right: 0;
+            justify-content: center;
+        }
+    }
+    .footer {
+        &__wrapper {
+            justify-content: space-around;
+        }
+    }
+
     
 }
 
 @media(max-width: 992px) {
+    .header-h2 {
+        font-size: 36px;
+    }
+    .header-h3 {
+        font-size: 24px;
+    }
+    .solution {
+        padding-top: 0px;
+        &__content {
+            top: 230px;
+            max-width: 530px;
+            max-height: 300px;
+        }
+        &__h2 {
+            padding: 5px 50px;
+            text-align: center;
+            font-size: 36px;
+        }
+        &__p {
+            padding: 5px 50px;
+            text-align: center;
+            font-size: 26px;
+            font-weight: 400;
+        }
+    }
+    .footer {
+        &__location {
+            padding-top: 25px;
+        }
+    }
     
 }
 
 @media(max-width: 767px) {
+    .header {
+        padding: 0;
+        &__wrapper {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            background-color: rgba($color: #244c4c33, $alpha: 0.96);
+            top: 0;
+            left: -100%;
+            transition: 0.5s all;
+            z-index: 11;
+            &_active {
+                left:0;
+        }
+        }
+        &__logo {
+            padding-top: 100px;
+            color: aliceblue;
+        }
+        &__search {
+            margin-bottom: 150px;
+            justify-content: center;
+        }
+        &__navigation {
+            flex-direction: column;
+        }
+        &__navigation-a {
+            padding-top: 15px;
+            color: aliceblue;
+        }
+    }
+    .hamburger {
+        display: block;
+        span {
+            display: block;
+            // background-color:aliceblue;
+        }
+    }
+    .solution {
+        &__content {
+            top: 70px;
+        }
+    }
+    .projects {
+        &__grid {
+            grid-template-columns: repeat(1, 318px);
+        }
+        &__grid-item {
+            padding: 0 5px;
+            img {
+                width: 100%;
+                max-width: 344px;
+            }
+        }
+    }
+
     
 }
 
 @media(max-width: 575px) {
+    .solution {
+        &__content {
+            position: static;
+            max-height: 500px;
+            // top: 90px;
+            background: linear-gradient(91.1deg, rgba(244, 246, 245, 0.4) -7.89%, rgba(255, 255, 255, 0.9) 132.55%);
+        }
+        &__h2 {
+            padding: 5px 50px;
+            text-align: center;
+            font-size: 36px;
+        }
+        &__p {
+            padding: 5px 50px;
+            text-align: center;
+            font-size: 26px;
+            font-weight: 400;
+        }
+    }
+    .services {
+        &__items {
+            flex-direction: column;
+            align-items: center;
+        }
+        &__item {
+            padding-top: 15px;
+        }
+    }
+    .about {
+        &__content {
+            padding: 10px;
+        }
+        &__h2 {
+            font-size: 32px;
+            color: black;
+        }
+        &__text {
+            padding-top: 0px;
+            padding-bottom: 3px;
+            font-size: 21px;
+            line-height: 25px;
+            color: black;
+        }
+    }
+    .testimonial {
+        &__item {
+            flex-direction: column;
+            max-height: 350px;
+            text-align: center;
+        }
+    }
+    .footer {
+        &__wrapper {
+            text-align: center;
+        }
+        &__articles {
+            padding-top: 25px;
+        }
+    }
     
 }
 
-@media(max-width: 320px) {
+@media(max-width: 345px) {
+    .footer {
+        &__location {
+            display: none;
+        }
+    }
     
 }
